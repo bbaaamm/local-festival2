@@ -1,0 +1,28 @@
+h1 {
+    text-align:center;
+}
+h1 a {
+    text-decoration:none;
+    color:black;
+}
+table {
+    width:50%;
+    margin:auto;
+    border-collapse:collapse;
+
+}
+tr td {
+    height:70px;
+    border-bottom:1px solid lightgray;
+}
+input {
+    width:30%;
+    height:50%;
+}
+.mod {
+    width:44px;
+    height:24px;
+}
+.button {
+    text-align:center;
+}
