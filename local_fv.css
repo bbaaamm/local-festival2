@@ -22,10 +22,7 @@ p{
     margin-top: 50px;
     border: 20px;
 }
-span{
-    color: rgb(255, 255, 0);
-    font-size: 30px;
-}
+
 
 /*리뷰와 평점 만들기*/
 #myform fieldset{

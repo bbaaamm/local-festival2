@@ -13,6 +13,7 @@ border: 2px solid #000000;
 border-radius: 10px;
 }
 
+
 /* 로그인 버튼 */
 
 .logbox{
@@ -40,6 +41,8 @@ top: 90px;
 
 border: 2px solid #000000;
 }
+
+
 
 /*로그인 텍스트 아이디 입력 박스1*/
 .id-text1{
@@ -94,7 +97,7 @@ border: 2px solid #000000;
     color: #000000;
 }
 /*로그인 페이지 로그인버튼*/
-.logbox{
+.log{
     position: absolute;
     width: 151px;
     height: 119px;
