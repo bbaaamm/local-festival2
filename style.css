@@ -1,20 +1,4 @@
 /* 메인 css */
-
-.container {
-    display: grid;
-    grid-template-columns: repeat(3);
-    grid-auto-rows: minmax(100px, auto);
-    grid-template-areas: 
-    "header header header"
-    "   a    main    b   "
-    "   .     .      .   "
-    "footer footer footer";
-}
-
-.header { grid-area: header; }
-.main-content { grid-area: main; }
-.footer { grid-area: footer; }
-
 h1 {
     text-align:center;
 }
@@ -93,7 +77,7 @@ table{
 .footer {
     position:absolute;
     bottom:0;
-    width:100%;
+    width:99%;
     height:70px;   
 }
 
@@ -298,25 +282,6 @@ font-size: 40px;
 background: #D9D9D9;
 
 }
-/* 회원가입 페이지 이메일 */
-
-.email{
-position: absolute;
-width: 344px;
-height: 88px;
-left: 185px;
-top: 1150px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 30px;
-line-height: 36px;
-
-color: #000000;
-
-}
-
 /* 회원가입 페이지 관심지역 입력 박스 */
 
 .likelocal-text{
@@ -376,11 +341,6 @@ line-height: 36px;
 
 color: #000000;
 }
-
-
-
-
-
 /* 회원가입 페이지 중복체크 버튼 */
 
 .dupbox{
@@ -426,3 +386,15 @@ top: 1712px;
     
     color: #000000;
     }
+/* email, FAQ, sns 위치설정*/
+.sns {
+    float:right;
+}
+.FAQ {
+    float:right;
+}
+.email{
+    float:left;
+}
+
+

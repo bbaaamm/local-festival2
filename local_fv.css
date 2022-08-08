@@ -10,12 +10,14 @@ h1{
 .footer p{
     text-align: left;
 }
-p{
+
+p{ 
     margin-left: 150px;
     margin-right: 150px;
     margin-top: 50px;
     border: 20px;
 }
+
 
 
 /*리뷰와 평점 만들기*/
