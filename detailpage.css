@@ -18,6 +18,24 @@ p{
     border: 20px;
 }
 
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 6px;
+    text-align:center;
+}
+
+th{
+    width: 70px;
+}
+
+table{
+    margin:0 auto;
+    margin-top: 30px;
+    width: 80%;
+    clear: both;
+}
+
 
 
 /*리뷰와 평점 만들기*/
