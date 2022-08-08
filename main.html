@@ -2,26 +2,73 @@
     <head>
         <title>local-festival</title>
         <link rel ="stylesheet" href="style.css">
+        <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+        <script src="main.js"></script>
     </head>
     <body>
-        <h1><a href="main.html">룰루랄라 즐거운 축제</a></h1>
+        <div class="container">
+            <div class="header">
+                <h1><a href="main.html">룰루랄라 즐거운 축제</a></h1>
 
-        <div class="btn">
-        <button><a href="login.html">로그인</a></button>
-        <button><a href="login.html">회원가입</a></button>
-        <button><a href="mypage.html">마이페이지</a></button>
+                <div class="btn">
+                <!-- 팝업 생성 <input type="button" value="로그인" onclick="window.open('login.html', '로그인', 'width=400px, height=400px, location=no, status=no, scrollbars=no');"> -->
+                <button><a href="login.html">로그인</a></button>
+                <button><a href="newlogin.html">회원가입</a></button>
+                <button><a href="mypage.html">마이페이지</a></button>
+                </div>
+            </div>
+        
+            <div class="main-content">
+                <div class="adBox">
+                        축제광고
+                </div>
+                
+                <table>
+                    <tr>
+                        <th>분야 선택</th>
+                        <td onClick="HighLightTD(this, '#CCFFFF','cc3333');" >교통</td>
+                        <td onClick="HighLightTD(this, '#CCFFFF','cc3333');" >안전</td>
+                        <td onClick="HighLightTD(this, '#CCFFFF','cc3333');" >주택</td>
+                        <td onClick="HighLightTD(this, '#CCFFFF','cc3333');" >경제</td>
+                        <td onClick="HighLightTD(this, '#CCFFFF','cc3333');" >환경</td>
+                        <td onClick="HighLightTD(this, '#CCFFFF','cc3333');" >문화</td>
+                        <td onClick="HighLightTD(this, '#CCFFFF','cc3333');" >복지</td>
+                        <td onClick="HighLightTD(this, '#CCFFFF','cc3333');" >행정</td>
+                    </tr>
+                    <tr>
+                        <th>기간 선택</th>
+                        <td onClick="HighLightTD(this, '#CCFFFF','cc3333');" >최근 1주일</td>
+                        <td onClick="HighLightTD(this, '#CCFFFF','cc3333');" >최근 1달</td>
+                    </tr>
+                    <tr>
+                        <th>지역 선택</th>
+                        <td onClick="HighLightTD(this, '#CCFFFF','cc3333');" >서울</td>
+                        <td onClick="HighLightTD(this, '#CCFFFF','cc3333');" >경기</td>
+                        <td onClick="HighLightTD(this, '#CCFFFF','cc3333');" >인천</td>
+                        <td onClick="HighLightTD(this, '#CCFFFF','cc3333');" >강원</td>
+                        <td onClick="HighLightTD(this, '#CCFFFF','cc3333');" >부산</td>
+                        <td onClick="HighLightTD(this, '#CCFFFF','cc3333');" >대구</td>
+                        <td onClick="HighLightTD(this, '#CCFFFF','cc3333');" >대전</td>
+                        <td onClick="HighLightTD(this, '#CCFFFF','cc3333');" >광주</td>
+                        <td onClick="HighLightTD(this, '#CCFFFF','cc3333');" >울산</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div class ="footer">
+                <div id="email">
+                    <p>문의 이메일 주소 : seoil.naver.com</p>
+                </div>
+                <div class ="FAQ">
+                    <input type=button style= "width:60pt; height: 60pt;"  value="FAQ" onclick="location.href='FAQ.html'">
+                </div>
+                <div class ="sns">
+                    <a href="https://www.instagram.com/korea._.festival/" target="_blank" title="새창">
+                        <span class="fv fv_instagram"></span>
+                        <p>인스타그램</p>
+                    </a>
+                </div>
+            </div>
         </div>
-
-        <div class="adBox">
-                축제광고
-        </div>
-
-
-        <!-- <div class="email">
-            문의 이메일 주소 : seoil.naver.com
-        </div>
-        <div class="qa">
-            Q&A
-        </div> -->
     </body>
 </html>
