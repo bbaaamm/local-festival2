@@ -48,8 +48,34 @@ a{
     margin:0 auto;
 }
 
+/* 캘린더 */
+th {
+    height: 50px;
+    width: 70px;
+    background-color:  orange;
+}
+td {
+    text-align: center;
+    height: 50px;
+    width: 70px;
+    background-color: #FFFDC5;  
+}
+input {
+    height: 50px;
+    width: 70px;
+    border: none;
+    background-color:  orange;
+    font-size: 30px;
+}
+.year_mon{
+    font-size: 25px;
+}
+.colToday{
+    background-color: #FFA07A;
+}
+
 /* 정렬 박스 */
-table, th, td {
+.select table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
     padding: 6px;
@@ -60,8 +86,10 @@ table{
     margin:0 auto;
     margin-top: 30px;
     width: 80%;
+    clear: both;
 }
 
+/* footer */
 .footer {
     position:absolute;
     bottom:0;
