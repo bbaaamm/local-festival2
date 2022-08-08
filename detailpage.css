@@ -1,4 +1,105 @@
+<<<<<<< HEAD:local_fv.css
 
+/* .container {
+    grid-template-areas:
+        "header header header"
+        "  a     main     b  "
+        "footer footer footer";
+} */
+
+/* .header{ grid-area: header;} */
+
+=======
+>>>>>>> 7d0297c532cc1a4fcd9612bab0dae06d0956250e:detailpage.css
+img{
+    display: block;
+    margin: 0px auto; /*가운데 정렬*/
+    height: auto;
+}
+h1{
+    text-align: center;
+    font-size: 80px;
+}
+<<<<<<< HEAD:local_fv.css
+p{
+=======
+.footer p{
+    text-align: left;
+}
+
+p{ 
+>>>>>>> 7d0297c532cc1a4fcd9612bab0dae06d0956250e:detailpage.css
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 50px;
+    border: 20px;
+}
+
+<<<<<<< HEAD:local_fv.css
+=======
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 6px;
+    text-align:center;
+}
+
+th{
+    width: 70px;
+}
+
+table{
+    margin:0 auto;
+    margin-top: 30px;
+    width: 80%;
+    clear: both;
+}
+
+
+>>>>>>> 7d0297c532cc1a4fcd9612bab0dae06d0956250e:detailpage.css
+
+/*리뷰와 평점 만들기*/
+#myform fieldset{
+    margin-left: 150px;
+    margin-right: 150px;
+    display: inline-block;
+    direction: rtl; /*글자 방향 지정 ltr : left to right, rtl : right to left*/
+    border: 20px;
+}
+#myform fieldset legend{
+    text-align: right;
+}
+#myform input[type=radio]{
+    display: none;
+}
+#myform label{
+    font-size: 3em;
+    color: transparent;
+    text-shadow: 0 0 0 #f0f0f0;
+}
+#myform label:hover{
+    text-shadow: 0 0 0 rgba(250, 208, 0, 0.99);
+}
+#myform label:hover ~ label{
+    text-shadow: 0 0 0 rgba(250, 208, 0, 0.99);
+}
+#myform input[type=radio]:checked ~ label{
+    text-shadow: 0 0 0 rgba(250, 208, 0, 0.99);
+}
+#reviewContents {
+    margin-left: 150px;
+    margin-right: 150px;
+    width: 80%;
+    height: 150px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: solid 1.5px #D3D3D3;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: none;
+<<<<<<< HEAD:local_fv.css
+
+}
 /* .container {
     grid-template-areas:
         "header header header"
@@ -65,71 +166,6 @@ p{
     font-size: 16px;
     resize: none;
 
-}
-/* .container {
-    grid-template-areas:
-        "header header header"
-        "  a     main     b  "
-        "footer footer footer";
-} */
-
-/* .header{ grid-area: header;} */
-
-img{
-    display: block;
-    margin: 0px auto; /*가운데 정렬*/
-    height: auto;
-}
-h1{
-    text-align: center;
-    font-size: 80px;
-}
-p{
-    margin-left: 150px;
-    margin-right: 150px;
-    margin-top: 50px;
-    border: 20px;
-}
-
-
-/*리뷰와 평점 만들기*/
-#myform fieldset{
-    margin-left: 150px;
-    margin-right: 150px;
-    display: inline-block;
-    direction: rtl; /*글자 방향 지정 ltr : left to right, rtl : right to left*/
-    border: 20px;
-}
-#myform fieldset legend{
-    text-align: right;
-}
-#myform input[type=radio]{
-    display: none;
-}
-#myform label{
-    font-size: 3em;
-    color: transparent;
-    text-shadow: 0 0 0 #f0f0f0;
-}
-#myform label:hover{
-    text-shadow: 0 0 0 rgba(250, 208, 0, 0.99);
-}
-#myform label:hover ~ label{
-    text-shadow: 0 0 0 rgba(250, 208, 0, 0.99);
-}
-#myform input[type=radio]:checked ~ label{
-    text-shadow: 0 0 0 rgba(250, 208, 0, 0.99);
-}
-#reviewContents {
-    margin-left: 150px;
-    margin-right: 150px;
-    width: 80%;
-    height: 150px;
-    padding: 10px;
-    box-sizing: border-box;
-    border: solid 1.5px #D3D3D3;
-    border-radius: 5px;
-    font-size: 16px;
-    resize: none;
-
+=======
+>>>>>>> 7d0297c532cc1a4fcd9612bab0dae06d0956250e:detailpage.css
 }
