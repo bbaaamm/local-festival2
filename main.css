@@ -3,9 +3,25 @@
 h1 {
     text-align:center;
 }
+
+/* 로그인 버튼 */
+
+.logbox{
+box-sizing: border-box;
+
+position: absolute;
+width: 94px;
+height: 43px;
+left: 1122px;
+top: 90px;
+
+border: 2px solid #000000;
+}
+
 h1 a {
     text-decoration:none;
     color:black;
+
 }
 
 /* 로그인, 회원 가입, 마이페이지*/
@@ -100,6 +116,143 @@ table{
     vertical-align: middle;
 }
 
+
+
+input{background-color:white;}
+.active{background-color:red;}
+  /* 지역선택 */
+
+.local{
+position: absolute;
+width: 158px;
+height: 59px;
+left: 59px;
+top: 800px;
+
+background: #D9D9D9;
+
+position: absolute;
+width: 142px;
+height: 38px;
+left: 69px;
+top: 811px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 42px;
+
+color: #000000;
+}
+/* 서울*/
+
+.box1{
+position: absolute;
+width: 96px;
+height: 50px;
+left: 279px;
+top: 801px;
+
+background: #D9D9D9;
+}
+
+/* 경기*/
+
+.box2{
+position: absolute;
+width: 96px;
+height: 50px;
+left: 406px;
+top: 801px;
+
+background: #D9D9D9;
+}
+
+/* 인천 */
+
+.box3{
+position: absolute;
+width: 96px;
+height: 50px;
+left: 534px;
+top: 801px;
+
+background: #D9D9D9;
+}
+
+/* 강원 */
+
+.box4{
+position: absolute;
+width: 96px;
+height: 50px;
+left: 661px;
+top: 801px;
+
+background: #D9D9D9;
+}
+
+/* 부산*/
+
+.box5{
+position: absolute;
+width: 96px;
+height: 50px;
+left: 788px;
+top: 801px;
+
+background: #D9D9D9;
+}
+
+/* 대구 */
+
+.box6{
+position: absolute;
+width: 96px;
+height: 50px;
+left: 916px;
+top: 801px;
+
+background: #D9D9D9;
+
+}
+/* 대전 */
+
+.box7{
+position: absolute;
+width: 96px;
+height: 50px;
+left: 1043px;
+top: 801px;
+
+background: #D9D9D9;
+
+}
+/* 광주 */
+
+.box8{
+position: absolute;
+width: 96px;
+height: 50px;
+left: 1173px;
+top: 801px;
+
+background: #D9D9D9;
+}
+
+/* 울산 */
+
+.box9{
+position: absolute;
+width: 96px;
+height: 50px;
+left: 1291px;
+top: 801px;
+
+background: #D9D9D9;
+}
+
 /*로그인 텍스트 아이디 입력 박스1*/
 .id-text1{
     position: absolute;
@@ -153,7 +306,7 @@ table{
     color: #000000;
 }
 /*로그인 페이지 로그인버튼*/
-.logbox{
+.log{
     position: absolute;
     width: 151px;
     height: 119px;
