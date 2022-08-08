@@ -83,7 +83,7 @@ table{
     position:absolute;
     bottom:0;
     width:99%;
-    height:70px;   
+    height:10px;   
 }
 
 .fv_instagram {
@@ -400,5 +400,33 @@ top: 1712px;
 }
 .email{
     float:left;
+}
+/* 축제 리스트 */
+.list {
+    text-align: l   ;
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+}
+h2 {
+    border-bottom: 1px solid gray;
+    padding-bottom:10px;
+}
+ul {
+    border-bottom:1px solid gray;
+}
+li {
+    list-style: none;
+}
+.sub {
+    font-size:20px;
+    color:green;
+}
+.sub a {
+    text-decoration: none;
+    color:black;
+}
+.text {
+    color:gray;
 }
 
