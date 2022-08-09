@@ -1,16 +1,28 @@
 // 분야 선택
+
+// 백그라운드 컬러(흰)
 var orgBColor = '#ffffff';
+// 글자 컬러(검)
 var orgTColor = '#000000';
+
+// td 색상을 바꿔주는 함수 정의
 function HighLightTD(target, backColor,textColor) {
+
+// var tbody : target.parentNode(); 대상의 부모찾기
 var tbody = target.parentNode;
+// var tds : 태그 이름이 td인 거 찾기
 var tds = tbody.getElementsByTagName('td');
+
 for ( var i = 0; i < tds.length; i++ ) {
-if ( tds[i] != target ) {
-tds[i].style.backgroundColor = orgBColor;
-tds[i].style.color = orgTColor;
-} else {
-tds[i].style.backgroundColor = backColor;
-tds[i].style.color = textColor;
+        // 타겟이 아닐 경우 
+        if ( tds[i] != target ) {
+            tds[i].style.backgroundColor = orgBColor;
+            tds[i].style.color = orgTColor;
+        } 
+        // 타겟이 맞는 경우 
+        else {
+            tds[i].style.backgroundColor = backColor;
+            tds[i].style.color = textColor;
     }
   }
 }

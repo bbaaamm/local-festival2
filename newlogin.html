@@ -37,13 +37,16 @@
                 <td><input type="text" name="field" id="field"></td>
             </tr>  
             <tr>
-                <td class="left">수신여부</td>
-                <td><input type="checkbox" name="agree" value="수신에 동의"> 수신에 동의</td>
+                <td class="left"></td>
+                <td><label><input type="checkbox">수신에 동의</label></td>
+                <!-- <td class="left">수신여부</td>
+                <td><input type="checkbox" name="agree" value="수신에 동의"> 수신에 동의</td> -->
             </tr>
        </table>
        <br>
        <div class="button">
-       <button onclick="location.href='main.html'">뒤로</button>    
+       <button onclick="location.href='main.html'">뒤로</button> 
+        <!-- submit 은 서버의 폼 핸들러(form action 속성에 명시됨)로 폼 데이터를 전송하는 제출 버튼 -->
        <input type="submit" value="가입" class="mod"> 
        </div>
     </body>

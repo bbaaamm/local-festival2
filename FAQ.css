@@ -1,54 +1,58 @@
 /* FAQ 만들기 */
 .qna p {
-    text-align:left;
-  }
-  .layout{
-      max-width: 600px;
-      margin: 0 auto;
-  }
-  
-  .qna{
-      list-style: none;
-      margin: 0;
-      padding: 0;
-  }
-  .qna > li{
-    padding: 10px 0;
-    box-sizing: border-box;
-  }
-  .qna > li:nth-child(n+2){ /* 아이템 구분 점선 */
-    border-top: 1px dashed #aaa;
-  }
-  .qna input {
-    display: none;
-  }
-  .qna label { /* 제목 - 클릭 영역 */
-    font-weight: bold;
-    color: #000;
-    margin: 20px 0 0;
-    cursor: pointer;
-  }
-  .qna label::before { /* 제목 앞 화살표 */
-    content: "▶";
-    display: block;
-    color: #a00;
-    margin-right: 8px;
-    float: left;
-  }
-  .qna input:checked + label::before { /* 내용 펼침 상태 제목 앞 화살표 */
-    content: "▼";
-  }
-  
-  .qna div { /* 내용 영역 - 기본 감춤 상태 */
-    display: none;
-    color: #666;
-    font-size: 0.9375em;
-    overflow: hidden;
-    padding: 10px 0 10px 30px;
-    box-sizing: border-box;
-    transition: max-height 0.4s;
-    text-align:right;
-  }
-  .qna input:checked + label + div { /* 내용 영역 펼침 */
-    display: block;
-  }
+  text-align:left;
+}
+.layout{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.qna{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.qna > li{
+  padding: 10px 0;
+  box-sizing: border-box; /*테두리를 포함한 크기를 지정 가능*/
+}
+.qna > li:nth-child(n+2){ /* 아이템 구분 점선 
+  nth-child : 부모안에 모든 요소 중 n+2번째 요소 */
+  border-top: 1px dashed #aaa;
+}
+.qna input {
+  display: none;
+}
+.qna label { /* 제목 - 클릭 영역 */
+  font-weight: bold;
+  color: #000;
+  margin: 20px 0 0;
+  cursor: pointer;
+  /* 커서 모양 포인터(손가락) */
+}
+.qna label::before { /* 제목 앞 화살표 */
+  content: "▶";
+  display: block;
+  color: #a00;
+  margin-right: 8px;
+  float: left;
+}
+.qna input:checked + label::before { /* 내용 펼침 상태 제목 앞 화살표 */
+  content: "▼";
+}
+
+.qna div { /* 내용 영역 - 기본 감춤 상태 */
+  display: none;
+  color: #666;
+  font-size: 0.9375em;
+  overflow: hidden;
+  /* 넘치는 부분은 잘려서 안보이는 것 */
+  padding: 10px 0 10px 30px;
+  box-sizing: border-box;
+  transition: max-height 0.4s;  
+  /*값의 변화가 일정시간에 걸쳐 일어나게 하는 것 */
+  text-align:right;
+}
+.qna input:checked + label + div { /* 내용 영역 펼침 */
+  display: block;
+}
