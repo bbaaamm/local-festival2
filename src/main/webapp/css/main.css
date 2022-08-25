@@ -1,0 +1,585 @@
+/* 메인 css */
+
+h1 {
+    text-align:center;
+}
+
+/* 로그인 버튼 */
+
+.logbox{
+box-sizing: border-box;
+
+position: absolute;
+width: 94px;
+height: 43px;
+left: 1122px;
+top: 90px;
+
+border: 2px solid #000000;
+}
+
+h1 a {
+    text-decoration:none;
+    color:black;
+
+}
+
+/* 로그인, 회원 가입, 마이페이지*/
+.btn {
+    text-align:right;
+    margin-bottom: 30px;
+    margin-right: 100px;
+}
+a{
+    text-decoration-line: none;
+    text-decoration-color: black;
+}
+
+/* 축제 광고 */
+.adBox {
+    display:table;
+    table-layout:fixed;
+    width:90%;
+    height:250px;
+    background:lightgray;
+    margin-top:50px;
+    border:3px solid black;
+    border-radius:10px;
+    text-align:center;
+    margin:0 auto;
+}
+
+/* 캘린더 */
+th {
+    height: 50px;
+    width: 70px;
+    background-color:  orange;
+}
+td {
+    text-align: center;
+    height: 50px;
+    width: 70px;
+    background-color: #FFFDC5;  
+}
+.clander input {
+    height: 50px;
+    width: 70px;
+    border: none;
+    background-color:  orange;
+    font-size: 20px;
+}
+.year_mon{
+    font-size: 25px;
+}
+.colToday{
+    background-color: #FFA07A;
+}
+
+/* 정렬 박스 */
+.select table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 6px;
+    text-align:center;
+}
+
+table{
+    margin:0 auto;
+    margin-top: 30px;
+    width: 80%;
+    clear: both;
+}
+.container {
+    min-height: 100%;
+    position:relative;
+    padding-bottom:100px;
+}
+/* footer */
+.footer {
+    position:absolute;
+    bottom:0;
+    width:99%;
+    height:10px;   
+}
+
+.fv_instagram {
+    background-image: url(instagram.jpg);
+}
+
+.fv {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 60px 60px;
+    vertical-align: middle;
+}
+
+
+
+input{background-color:white;}
+.active{background-color:red;}
+  /* 지역선택 */
+
+.local{
+position: absolute;
+width: 158px;
+height: 59px;
+left: 59px;
+top: 800px;
+
+background: #D9D9D9;
+
+position: absolute;
+width: 142px;
+height: 38px;
+left: 69px;
+top: 811px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 42px;
+
+color: #000000;
+}
+/* 서울*/
+
+.box1{
+position: absolute;
+width: 96px;
+height: 50px;
+left: 279px;
+top: 801px;
+
+background: #D9D9D9;
+}
+
+/* 경기*/
+
+.box2{
+position: absolute;
+width: 96px;
+height: 50px;
+left: 406px;
+top: 801px;
+
+background: #D9D9D9;
+}
+
+/* 인천 */
+
+.box3{
+position: absolute;
+width: 96px;
+height: 50px;
+left: 534px;
+top: 801px;
+
+background: #D9D9D9;
+}
+
+/* 강원 */
+
+.box4{
+position: absolute;
+width: 96px;
+height: 50px;
+left: 661px;
+top: 801px;
+
+background: #D9D9D9;
+}
+
+/* 부산*/
+
+.box5{
+position: absolute;
+width: 96px;
+height: 50px;
+left: 788px;
+top: 801px;
+
+background: #D9D9D9;
+}
+
+/* 대구 */
+
+.box6{
+position: absolute;
+width: 96px;
+height: 50px;
+left: 916px;
+top: 801px;
+
+background: #D9D9D9;
+
+}
+/* 대전 */
+
+.box7{
+position: absolute;
+width: 96px;
+height: 50px;
+left: 1043px;
+top: 801px;
+
+background: #D9D9D9;
+
+}
+/* 광주 */
+
+.box8{
+position: absolute;
+width: 96px;
+height: 50px;
+left: 1173px;
+top: 801px;
+
+background: #D9D9D9;
+}
+
+/* 울산 */
+
+.box9{
+position: absolute;
+width: 96px;
+height: 50px;
+left: 1291px;
+top: 801px;
+
+background: #D9D9D9;
+}
+
+/*로그인 텍스트 아이디 입력 박스1*/
+.id-text1{
+    position: absolute;
+    width: 524px;
+    height: 65px;
+    left: 367px;
+    top: 404px;
+    
+    background: #D9D9D9;
+    }
+/*로그인 텍스트 비밀번호 입력 박스*/
+.pw-text1{
+    position: absolute;
+    width: 524px;
+    height: 65px;
+    left: 367px;
+    top: 562px;
+    
+    background: #D9D9D9;
+}
+/* 로그인 페이지 아이디 */
+.id1{
+    position: absolute;
+    width: 251px;
+    height: 53px;
+    left: 367px;
+    top: 351px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 0px;
+
+    color: #000000;
+}
+/*로그인 페이지 비밀번호*/
+.pw1{
+    position: absolute;
+    width: 251px;
+    height: 53px;
+    left: 367px;
+    top: 509px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 0px;
+
+    color: #000000;
+}
+/*로그인 페이지 로그인버튼*/
+.log{
+    position: absolute;
+    width: 151px;
+    height: 119px;
+    left: 925px;
+    top: 443px;
+
+    font-size: 35px;
+
+    background: #D9D9D9;
+}
+
+
+/* 회원가입 페이지 아이디 입력 박스
+
+.id-text2{
+position: absolute;
+width: 861px;
+height: 127px;
+left: 185px;
+top: 329px;
+
+font-size: 40px;
+background: #D9D9D9;
+
+}
+/* 회원가입 페이지 아이디 
+
+.id2{
+    position: absolute;
+    width: 344px;
+    height: 88px;
+    left: 185px;
+    top: 241px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    
+    color: #000000;
+    }
+/* 회원가입 페이지 비밀번호 입력 박스 
+
+.pw-text2{
+position: absolute;
+width: 861px;
+height: 126px;
+left: 185px;
+top: 569px;
+
+font-size: 40px;
+background: #D9D9D9;
+
+}
+/* 회원가입 페이지 비밀번호 
+
+.pw2{
+position: absolute;
+width: 344px;
+height: 88px;
+left: 185px;
+top: 481px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 36px;
+
+color: #000000;
+}
+
+
+/* 회원가입 페이지 비밀번호 재입력박스 
+
+.pw-text-re{
+position: absolute;
+width: 861px;
+height: 127px;
+left: 185px;
+top: 753px;
+
+font-size: 40px;
+background: #D9D9D9;
+
+}
+
+
+
+/* 회원가입 페이지 이름 입력박스 
+
+.name-text{
+position: absolute;
+width: 861px;
+height: 128px;
+left: 185px;
+top: 995px;
+
+font-size: 40px;
+background: #D9D9D9;
+}
+
+/* 회원가입 페이지 이름 
+
+.name{
+position: absolute;
+width: 344px;
+height: 87px;
+left: 185px;
+top: 908px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 36px;
+
+color: #000000;
+}
+/* 회원가입 페이지 이메일 입력 박스 
+
+.email-text{
+position: absolute;
+width: 861px;
+height: 127px;
+left: 185px;
+top: 1238px;
+
+font-size: 40px;
+background: #D9D9D9;
+
+}
+/* 회원가입 페이지 관심지역 입력 박스 
+
+.likelocal-text{
+position: absolute;
+width: 236px;
+height: 109px;
+left: 185px;
+top: 1495px;
+
+font-size: 40px;
+background: #D9D9D9;
+}
+/* 회원가입 페이지 관심 지역 
+
+.likelocal{
+position: absolute;
+width: 344px;
+height: 87px;
+left: 185px;
+top: 1408px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 36px;
+
+color: #000000;
+}
+
+/* 회원가입 페이지 관심분야 입력 박스 
+
+.likearea-text{
+position: absolute;
+width: 238px;
+height: 109px;
+left: 529px;
+top: 1495px;
+
+font-size: 40px;
+background: #D9D9D9;
+}
+/* 회원가입 페이지 관심 분야 
+
+.likearea{
+position: absolute;
+width: 345px;
+height: 87px;
+left: 529px;
+top: 1399px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 36px;
+
+color: #000000;
+} */
+/* 회원가입 페이지 중복체크 버튼 */
+
+.dupbox{
+position: absolute;
+width: 177px;
+height: 127px;
+left: 1102px;
+top: 329px;
+
+font-size: 40px;
+background: #D9D9D9;
+}
+
+/* 회원가입 페이지 Checkbox */
+
+/* Auto layout */
+.checkbox{
+ display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+position: absolute;
+width: 25px;
+height: 25px;
+left: 192px;
+top: 1712px; 
+
+/* 회원가입 페이지 수신에 동의 */
+}
+.agree{
+    position: absolute;
+    width: 384px;
+    height: 133px;
+    left: 242px;
+    top: 1704px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    
+    color: #000000;
+    }
+/* email, FAQ, sns 위치설정*/
+.sns {
+    float:right;
+}
+.FAQ {
+    float:right;
+}
+.email{
+    float:left;
+}
+/* 축제 리스트 */
+.list {
+    text-align: l   ;
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+}
+h2 {
+    border-bottom: 1px solid gray;
+    padding-bottom:10px;
+}
+ul {
+    border-bottom:1px solid gray;
+}
+li {
+    list-style: none;
+}
+.sub {
+    font-size:20px;
+    color:green;
+}
+.sub a {
+    text-decoration: none;
+    color:black;
+}
+.text {
+    color:gray;
+}
+
