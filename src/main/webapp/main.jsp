@@ -9,15 +9,36 @@
         <script src="main.js"></script>
     </head>
     <body>
+    <%  // <% 태그는 html 코드안에 자바 코드를 사용할 수 있도록 해주는 태그!
+		String userID = null;
+		if (session.getAttribute("userID") != null) {
+			userID = (String) session.getAttribute("userID");
+	}
+	%>
         <div class="container">
             <div class="header">
                 <h1><a href="main.jsp">룰루랄라 즐거운 festival</a></h1>
+                <% 
+                	if (userID == null) {
+                %>
                 <div class="btn">
                 <!-- 팝업 생성 <input type="button" value="로그인" onclick="window.open('login.html', '로그인', 'width=400px, height=400px, location=no, status=no, scrollbars=no');"> -->
                 <button><a href="login.jsp">로그인</a></button>
                 <button><a href="newlogin.jsp">회원가입</a></button>
                 <button><a href="mypage.jsp">마이페이지</a></button>
                 </div>
+                <%
+                	} else {
+                %>
+                <%= userID %> 님 반갑습니다.
+                <div class="btn">
+                <button><a href="logoutAction.jsp">로그아웃</a></button>
+                <button><a href="mypage.jsp">마이페이지</a></button>
+                </div>
+                <%
+                	}
+                %>
+                
             </div>
         
             <div class="main-content">

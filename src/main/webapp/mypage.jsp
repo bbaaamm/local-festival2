@@ -1,4 +1,12 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<% 
+String userID = (String)request.getAttribute("userID"); 
+String userPassword = (String)request.getAttribute("userPassword"); 
+String userName = (String)request.getAttribute("userName"); 
+String userEmail = (String)request.getAttribute("userEmail"); 
+String userArea = (String)request.getAttribute("userArea"); 
+String userInterest = (String)request.getAttribute("userInterest"); 
+%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -15,7 +23,7 @@
             </tr>
             <tr>
                 <td class="left">아이디</td>
-                <td><input type="text" name="id" id="id"></td>
+                <td><input type="text" name="id" value="<%= userID%>"></td>
             </tr>
             <tr>
                 <td class="left">비밀번호</td>
