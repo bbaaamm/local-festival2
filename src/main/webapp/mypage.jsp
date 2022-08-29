@@ -1,12 +1,10 @@
-<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<% 
-String userID = (String)request.getAttribute("userID"); 
-String userPassword = (String)request.getAttribute("userPassword"); 
-String userName = (String)request.getAttribute("userName"); 
-String userEmail = (String)request.getAttribute("userEmail"); 
-String userArea = (String)request.getAttribute("userArea"); 
-String userInterest = (String)request.getAttribute("userInterest"); 
-%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import="user.UserDAO"%>
+<%@ page import="user.User"%>
+<% request.setCharacterEncoding("UTF-8"); %>
+<%@ page import="java.io.PrintWriter" %>
+<jsp:useBean id="user" class="user.User" scope="page" />
 <!DOCTYPE html>
 <html>
     <head>
@@ -14,38 +12,57 @@ String userInterest = (String)request.getAttribute("userInterest");
         <link rel ="stylesheet" href="css/mypage.css">
     </head>
     <body>
-        <h1><a href="mypage.html">마이페이지</a></h1>
+        <%
+        String userID = null;
+        if(session.getAttribute("userID") != null){
+            userID = (String) session.getAttribute("userID");
+        }
+        if (userID == null){
+            PrintWriter script = response.getWriter();
+            script.println("<script>");
+            script.println("alert('로그인을 하세요')");
+            script.println("location.href = 'login.jsp'");
+            script.println("</script>");
+        }
+        UserDAO userDAO = new UserDAO();
+        User us = userDAO.getmember(userID);
+        %>
+        <h1><a href="mypage.jsp">마이페이지</a></h1>
         <br><br><br>
+
+       <form action="mypageUpdate.jsp" method="post">
        <table class="table">
             <tr>
                 <td class="left">이름</td>
-                <td><input type="text" name="username" id="username"></td>
+                <td><input type="text" name="userName" id="username" value="<%=us.getUserName() %>"></td>
             </tr>
             <tr>
                 <td class="left">아이디</td>
-                <td><input type="text" name="id" value="<%= userID%>"></td>
+                <td><input type="text" name="userID" id="id" value="<%=us.getUserID() %>" readonly></td>
             </tr>
-            <tr>
+<tr>
                 <td class="left">비밀번호</td>
-                <td><input type="text" name="password" id="password"></td>
+                <td><input type="password" name="userPassword" value="<%=us.getUserPassword() %>"></td>
             </tr>
             <tr>
                 <td class="left">이메일</td>
-                <td><input type="text" name="email" id="email"></td>
+                <td><input type="text" name="userEmail" id="email" value="<%=us.getUserEmail() %>"></td>
             </tr>
             <tr>
                 <td class="left">관심지역</td>
-                <td><input type="text" name="region" id="region"></td>
+                <td><input type="text" name="userArea" id="region" value="<%=us.getUserArea() %>"></td>
             </tr>
             <tr>
                 <td class="left">관심분야</td>
-                <td><input type="text" name="field" id="field"></td>
-            </tr>  
+                <td><input type="text" name="userInterest" id="field" value="<%=us.getUserInterest() %>"></td>
+            </tr>
        </table>
+       <input type="submit" value="수정" class="mod"> 
+       </form>
        <br>
        <div class="button">
-       <button onclick="location.href='main.jsp'">뒤로</button>    
-       <input type="submit" value="수정" class="mod"> 
+       <button onclick="location.href='main.jsp'">뒤로</button>
+
        </div>
     </body>
 </html>

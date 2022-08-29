@@ -24,10 +24,11 @@
         <h1><a href="newlogin.jsp">회원가입</a></h1>
         <br><br><br>
         <form method="post" action="newloginAction.jsp" onsubmit="return pw();">
-       <table class="table">            
+       <table class="table">         
             <tr>
                 <td class="left">아이디</td>
                 <td><input type="text" name="userID"><input type="button" value="중복체크" style="width:67px;"></td>
+                
             </tr>
             <tr>
                 <td class="left">비밀번호</td>

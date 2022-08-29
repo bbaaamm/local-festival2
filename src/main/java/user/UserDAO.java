@@ -58,7 +58,49 @@ public class UserDAO {
 			e.printStackTrace();
 		}
 		return -1; // 데이터베이스 오류
-	}
-	
-	
+	}	
+	public User getmember(String userID) {
+        String SQL = "select * from USER where userID = ?";
+        User us = null;
+        try {
+            pstmt = conn.prepareStatement(SQL);
+            pstmt.setString(1, userID);
+            rs=pstmt.executeQuery();
+            if(rs.next()){
+                us = new User();
+                us.setUserName(rs.getString("userName"));
+                us.setUserID(rs.getString("userID"));
+                us.setUserPassword(rs.getString("userPassword"));
+                us.setUserEmail(rs.getString("userEmail"));
+                us.setUserArea(rs.getString("userArea"));
+                us.setUserInterest(rs.getString("userInterest"));
+
+                System.out.println("회원정보 저장완료");
+            }
+            System.out.println("sql구문실행완료");
+
+        }catch(Exception e) {
+            e.printStackTrace();
+        }
+        return us;
+    }
+	public int updateMember(User user) {
+        String SQL = "UPDATE USER SET userName=?, userPassword=?, userEmail=? , userArea=?, userInterest=? "
+                + "WHERE userID=?";
+        try {
+            pstmt = conn.prepareStatement(SQL);
+            pstmt.setString(1, user.getUserName());
+            pstmt.setString(2, user.getUserPassword());
+            pstmt.setString(3, user.getUserEmail());
+            pstmt.setString(4, user.getUserArea());
+            pstmt.setString(5, user.getUserInterest());
+            pstmt.setString(6, user.getUserID());
+
+            return pstmt.executeUpdate();
+
+        }catch(Exception e) {
+            e.printStackTrace();
+        }
+        return -1;
+    }
 }

@@ -1,11 +1,16 @@
-<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import="user.UserDAO"%>
+<%@ page import="user.User"%>
+<% request.setCharacterEncoding("UTF-8"); %>
+<%@ page import="java.io.PrintWriter" %>
+<jsp:useBean id="user" class="user.User" scope="page" />
 <!DOCTYPE html>
 <html>
     <head>
     	<meta charset="UTF-8">
         <title>local-festival</title>
         <link rel ="stylesheet" href="css/main.css">
-        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
         <script src="main.js"></script>
     </head>
     <body>
@@ -14,6 +19,8 @@
 		if (session.getAttribute("userID") != null) {
 			userID = (String) session.getAttribute("userID");
 	}
+		UserDAO userDAO = new UserDAO();
+        User us = userDAO.getmember(userID);
 	%>
         <div class="container">
             <div class="header">
@@ -25,27 +32,57 @@
                 <!-- 팝업 생성 <input type="button" value="로그인" onclick="window.open('login.html', '로그인', 'width=400px, height=400px, location=no, status=no, scrollbars=no');"> -->
                 <button><a href="login.jsp">로그인</a></button>
                 <button><a href="newlogin.jsp">회원가입</a></button>
-                <button><a href="mypage.jsp">마이페이지</a></button>
                 </div>
                 <%
                 	} else {
                 %>
-                <%= userID %> 님 반갑습니다.
                 <div class="btn">
+                <%= us.getUserID() %>(<%= us.getUserName() %>)님 반갑습니다.
                 <button><a href="logoutAction.jsp">로그아웃</a></button>
                 <button><a href="mypage.jsp">마이페이지</a></button>
                 </div>
                 <%
                 	}
                 %>
-                
-            </div>
-        
+            </div>       
             <div class="main-content">
                 <div class="adBox">
-                        축제광고
-                </div>
-                
+                	<div class="img1">
+                		<img src="instagram.jpg">
+                		<div class="text">
+                			<h3>축제명</h3>
+                			<p>-축제 관련 설명-</p>
+                		</div>
+                	</div>
+                	<div class="img1">
+                		<img src="https://www.mcst.go.kr/attachFiles/cultureInfoCourt/localFestival/notifyFestival/1659318247159.jpg">
+                		<div class="text">
+                			<h3>한복상점</h3>
+                			<p>어쩌구 저쩌구</p>
+                		</div>
+                	</div>
+                	<div class="img1">
+                		<img src="https://www.mcst.go.kr/attachFiles/cultureInfoCourt/localFestival/notifyFestival/1629331487887.jpg">
+                		<div class="text">
+                			<h3>축제</h3>
+                			<p>어쩌구 저쩌구</p>
+                		</div>
+                	</div>
+                	<div class="img1">
+                		<img src="fest1.jpg">
+                		<div class="text">
+                			<h3>떡볶이</h3>
+                			<p>어쩌구 저쩌구</p>
+                		</div>
+                	</div>
+                	<div class="img1">
+                		<img src="fest3.jpg">
+                		<div class="text">
+                			<h3>국제광고제</h3>
+                			<p>어쩌구 저쩌구</p>
+                		</div>
+                	</div>
+                </div>             
                 <table id="select">
                     <tr>
                         <th>분야 선택</th>
@@ -107,18 +144,18 @@
                         <div class="sub">
                                 <a href="hanbok_8.25.jsp">2022 한복 상점</a>
                         </div>
-                        <div class="text">
+                        <div class="text1">
                                 <p>[2022-08-25 ~ 2022-08-28]</p>
                         </div>
                     </li>
                     <li>
                         <div class="photo">
-                            <img src="https://www.mcst.go.kr/attachFiles/cultureInfoCourt/localFestival/notifyFestival/1659318247159.jpg" alt="사진1" width="100px">
+                            <img src="https://www.mcst.go.kr/attachFiles/cultureInfoCourt/localFestival/notifyFestival/1629331487887.jpg"" alt="사진1" width="100px" height="141px">
                         </div>
                         <div class="sub">
                                 <a href="comedy_8.19.jsp">부산국제코미디페스티벌</a>
                         </div>
-                        <div class="text">
+                        <div class="text1">
                                 <p>[2022-08-19 ~ 2022-08-28]</p>
                         </div>
                     </li>
