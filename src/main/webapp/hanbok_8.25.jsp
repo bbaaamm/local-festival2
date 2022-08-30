@@ -57,7 +57,7 @@
 			<th>작성자</th>
 		</tr>
 	</thead>
-	<tbody>
+	<tbody class="review2">
 	<%
 		ReviewDAO reviewDAO = new ReviewDAO();
 		ArrayList<Review> list = reviewDAO.getList(pageNumber);
@@ -100,6 +100,7 @@
     <input type="submit" value="작성">
     </div>
     </form>
+    <button onclick="location.href='main.jsp'">뒤로</button>
     <p>
       관련 사이트 : <a href="https://www.2022hanbokexpo.com/#." target="_blank"title="hanbok">2022 한복상점</a>
     </p>
