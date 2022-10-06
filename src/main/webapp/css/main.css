@@ -133,7 +133,7 @@ table{
 }
 
 .fv_instagram {
-    background-image: url(instagram.jpg);
+    background-image: instagram.jpg;
 }
 
 .fv {
@@ -145,8 +145,6 @@ table{
     background-size: 60px 60px;
     vertical-align: middle;
 }
-
-
 
 input{background-color:white;}
 .active{background-color:red;}

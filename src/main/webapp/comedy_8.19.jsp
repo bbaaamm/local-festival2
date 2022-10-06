@@ -60,10 +60,9 @@
     <div>
       <textarea class="col-auto form-control" type="text" id="reviewContents"
             placeholder="별점을 남겨주시면 페이지에 도움이 됩니다!"></textarea>
-            <!-- <placeholder>태그는 무엇을 입력해야 하는지 안내하는 문구를 넣는 태그, 값이 전송이 안되는 값 -->
-            
+            <!-- <placeholder>태그는 무엇을 입력해야 하는지 안내하는 문구를 넣는 태그, 값이 전송이 안되는 값 -->  
     </div>
-    
+    <button onclick="location.href='main.jsp'">뒤로</button>
     <p>
       관련 누리집 : <a href="http://www.bicf.kr/" target="_blank"title="hanbok">부산국제코미디페스티벌</a>
     </p>

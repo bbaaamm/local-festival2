@@ -24,7 +24,7 @@
 	%>
         <div class="container">
             <div class="header">
-                <h1><a href="main.jsp">룰루랄라 즐거운 festival</a></h1>
+                <h1><a href="main.jsp">룰루랄라 즐거운 festival12345678</a></h1>
                 <% 
                 	if (userID == null) {
                 %>
